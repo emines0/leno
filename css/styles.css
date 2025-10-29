@@ -13,6 +13,7 @@
   --font-family: "Open Sans", sans-serif;
 }
 
+html,
 body {
   font-family: var(--font-family);
   background: var(--secondary-color);
@@ -426,7 +427,276 @@ img {
   cursor: pointer;
 }
 
-/* Media queries */
+/* Details Section */
+.details {
+  padding: 9rem 2rem;
+}
+
+.details__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.details__grid-content {
+  max-width: 500px;
+  width: 100%;
+}
+
+.details__grid-heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.details__grid-description {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Details Icons */
+.details__icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8rem;
+  gap: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.details__icons i {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.details__icons-item-amount {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.details__icons-item-title {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+/* Screenshots Section */
+.screenshots {
+  padding: 6rem 2rem;
+  background: var(--tertiary-color);
+  text-align-last: center;
+}
+
+.screenshots__container {
+  max-width: 1200px;
+}
+
+.screenshots__title {
+  font-size: 2.3rem;
+  margin: 0 auto 2.5rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--primary-color);
+  width: 300px;
+}
+
+.screenshots__images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.screenshots__images img {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* Download Section */
+.download {
+  background: #000 url("../images/download-background.jpg") no-repeat center center/cover;
+  padding: 11.5rem 2rem 8rem;
+}
+
+.download__container {
+  display: flex;
+  flex-direction: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.download__content {
+  max-width: 500px;
+}
+
+.download__description {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.download__image img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.download__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.download__button {
+  padding: 1rem 2rem;
+}
+
+.download__button i {
+  margin-right: 0.5rem;
+}
+
+/* Footer Section */
+.footer {
+  background-color: var(--tertiary-color);
+  color: #9f9caf;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+.footer__links-link,
+.footer__social-link {
+  color: #9f9caf;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__links-link:hover,
+.footer__social-link:hover {
+  color: var(--primary-color);
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.footer__title {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.footer__social {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Inner Header Section */
+.inner-header {
+  background: #000 url("../images/header-background.jpg") no-repeat center center/cover;
+  padding: 10rem 2rem 6rem;
+}
+
+/* Pricing Section */
+.pricing {
+  background: var(--tertiary-color);
+  padding: 4rem 2rem 6rem;
+}
+
+.pricing__title {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pricing__cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.pricing__card-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+}
+
+.pricing__card-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.pricing__card-price {
+  font-size: 3rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.pricing__card-list {
+  text-align: left;
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+
+.pricing__card-item i {
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+}
+
+/* Pricing Notes Section */
+.pricing-notes {
+  padding: 3rem 2rem;
+  color: #9f9caf;
+  text-align: center;
+}
+
+/* Details Features Section */
+.details-features {
+  background: var(--tertiary-color);
+  padding: 4rem 2rem;
+}
+
+.details-features__title {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.details-features__list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.details-features__list-item i {
+  color: var(--primary-color);
+}
+
+.details-features__list-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Media Queries */
 @media (max-width: 992px) {
   /* Hero Section */
   .hero {
@@ -498,6 +768,60 @@ img {
   .features__grid-column-center img {
     max-width: 300px;
   }
+
+  /* Details Section */
+  .details__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .details__grid-img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .details__grid-content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .details__icons {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+
+  /* Download Section */
+  .download {
+    padding-top: 10rem;
+  }
+
+  .download__container {
+    flex-direction: column-reverse;
+  }
+
+  .download__buttons {
+    flex-direction: column;
+  }
+
+  .download__button {
+    width: 100%;
+    text-align: center;
+    padding: 0.7rem;
+  }
+
+  /* Footer Section */
+  .footer {
+    font-size: 1rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+    max-width: 600px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -528,5 +852,18 @@ img {
 
   .modal__content iframe {
     width: 100%;
+  }
+
+  /* Pricing Section */
+  .pricing__cards {
+    flex-direction: column;
+    gap: 4.5rem;
+  }
+
+  /* Details Features Section */
+  .details-features__list-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
   }
 }
